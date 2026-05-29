@@ -1,0 +1,8 @@
+{
+  "name": "Universal de Hamburguesas 118",
+  "description": "Mobile registration for Friends & Family opening event at Universal de Hamburguesas, Medellín.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

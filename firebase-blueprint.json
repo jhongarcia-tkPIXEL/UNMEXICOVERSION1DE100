@@ -1,0 +1,38 @@
+{
+  "entities": {
+    "Registration": {
+      "title": "Registration",
+      "description": "Un registro de reservación para un turno específico.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "date": { "type": "string" },
+        "timeSlot": { "type": "string" },
+        "guests": { "type": "integer" },
+        "timestamp": { "type": "string" }
+      },
+      "required": ["id", "name", "phone", "date", "timeSlot", "guests", "timestamp"]
+    },
+    "Setting": {
+      "title": "Setting",
+      "description": "Configuraciones globales del sistema.",
+      "type": "object",
+      "properties": {
+        "isPaused": { "type": "boolean" }
+      },
+      "required": ["isPaused"]
+    }
+  },
+  "firestore": {
+    "registrations": {
+      "schema": "Registration",
+      "description": "Colección de registros de reservación."
+    },
+    "settings": {
+      "schema": "Setting",
+      "description": "Configuraciones del sistema, incluyendo pausa global."
+    }
+  }
+}
